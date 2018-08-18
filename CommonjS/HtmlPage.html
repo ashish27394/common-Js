@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <script> var exports = {}; </script>
+    <script src="systemjs/dist/system.js"></script>
+    <body>
+        <script>
+            SystemJS.import('Client.js')
+            .then(function (exports){
+                var x = new exports.Client();
+                x.Add();
+            })
+        </script>
+    </body>
+</html>
